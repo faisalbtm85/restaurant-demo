@@ -155,7 +155,22 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen bg-[#F6F2E9] text-[#111111] font-sans relative">
+    <div className="min-h-screen bg-[#F6F2E9] text-[#111111] font-sans relative pt-9">
+      {/* BRJ Demo Top Bar */}
+      <div className="fixed top-0 left-0 right-0 bg-[#111111] text-[#F6F2E9] py-2 px-4 z-[60] flex flex-row items-center justify-between text-[11px] font-black uppercase tracking-widest border-b border-[#F6F2E9]/20 shadow-md">
+        <div className="flex items-center space-x-2">
+          <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+          <span>BRJ Group Live Demo</span>
+          <a href="https://www.barisrajgroup.com" target="_blank" rel="noopener noreferrer" className="hidden sm:inline-block ml-2 text-[#E98518] hover:text-white transition-colors underline decoration-[#E98518]/50 underline-offset-4">Learn More</a>
+        </div>
+        <div className="flex items-center space-x-3">
+          <span className="hidden md:inline-block opacity-70">Want this for your business?</span>
+          <a href="https://www.barisrajgroup.com/contact?source=restaurant-demo" target="_blank" rel="noopener noreferrer" className="bg-[#E98518] hover:bg-white hover:text-[#111111] text-white px-3 py-1 transition-colors whitespace-nowrap">
+            Talk to BRJ Group
+          </a>
+        </div>
+      </div>
+
       {/* Toast Notification */}
       {toastMessage && (
         <div className="fixed top-20 left-1/2 -translate-x-1/2 z-50 bg-[#0E5135] border border-[#E98518] text-white px-5 py-3 rounded-none shadow-2xl flex items-center space-x-2 rtl:space-x-reverse animate-fade-in text-xs font-bold uppercase tracking-wider">

@@ -109,17 +109,30 @@ export const Footer: React.FC<FooterProps> = ({ language, onNavigate, onOpenAdmi
         </div>
 
         {/* Bottom copyright & Demo Disclaimer */}
-        <div className="border-t border-[#F6F2E9]/10 mt-12 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-[#F6F2E9]/50 uppercase tracking-widest font-bold">
-          <p>© {new Date().getFullYear()} THE BIRYAANI KING. ALL RIGHTS RESERVED.</p>
+        <div className="border-t border-[#F6F2E9]/10 mt-12 pt-6 flex flex-col items-center justify-between gap-6 text-[11px] text-[#F6F2E9]/50 uppercase tracking-widest font-bold">
+          
+          <div className="flex flex-col sm:flex-row items-center justify-between w-full gap-4">
+            <p>© {new Date().getFullYear()} THE BIRYAANI KING. ALL RIGHTS RESERVED.</p>
 
-          {onOpenAdmin && (
-            <button
-              onClick={onOpenAdmin}
-              className="px-3 py-1 bg-white/10 hover:bg-[#0E5135] text-white border border-white/20 transition-all text-[10px] font-black uppercase tracking-wider"
-            >
-              🔐 Owner Admin Portal
-            </button>
-          )}
+            {onOpenAdmin && (
+              <button
+                onClick={onOpenAdmin}
+                className="px-3 py-1 bg-white/10 hover:bg-[#0E5135] text-white border border-white/20 transition-all text-[10px] font-black uppercase tracking-wider"
+              >
+                🔐 Owner Admin Portal
+              </button>
+            )}
+          </div>
+
+          {/* BRJ Demo Attribution */}
+          <div className="text-center space-y-2 pt-4 border-t border-[#F6F2E9]/5 w-full">
+            <p className="text-[#E98518]">
+              Demo experience by <a href="https://www.barisrajgroup.com" target="_blank" rel="noopener noreferrer" className="text-white hover:underline underline-offset-4">BRJ Group</a>
+            </p>
+            <p className="text-[9px] opacity-70 max-w-2xl mx-auto normal-case tracking-normal font-medium">
+              This is a demonstration environment created to showcase possible restaurant digital solutions. It is not presented as an official client website.
+            </p>
+          </div>
         </div>
 
       </div>

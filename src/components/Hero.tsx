@@ -12,7 +12,7 @@ export const Hero: React.FC<HeroProps> = ({ language, onNavigate }) => {
   const t = TRANSLATIONS[language].hero;
 
   return (
-    <section id="hero" className="relative pt-28 sm:pt-36 pb-16 lg:pb-24 overflow-hidden bg-[#F6F2E9]">
+    <section id="hero" className="relative pt-36 sm:pt-44 pb-16 lg:pb-24 overflow-hidden bg-[#F6F2E9]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           

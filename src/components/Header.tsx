@@ -45,7 +45,7 @@ export const Header: React.FC<HeaderProps> = ({
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
+      className={`fixed top-9 left-0 right-0 z-40 transition-all duration-300 ${
         isScrolled
           ? 'bg-[#F6F2E9]/95 backdrop-blur-md border-b border-[#111111]/15 py-3 shadow-md'
           : 'bg-[#F6F2E9]/90 backdrop-blur-sm border-b border-[#111111]/10 py-4'
@@ -123,7 +123,7 @@ export const Header: React.FC<HeaderProps> = ({
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="lg:hidden fixed inset-x-0 top-[70px] bg-[#F6F2E9] border-b-2 border-[#111111] shadow-2xl py-6 px-6 z-50">
+        <div className="lg:hidden fixed inset-x-0 top-[106px] bg-[#F6F2E9] border-b-2 border-[#111111] shadow-2xl py-6 px-6 z-50">
           <nav className="flex flex-col space-y-4 text-xs font-extrabold uppercase tracking-widest mb-6 text-[#111111]">
             {navLinks.map((link) => (
               <button
