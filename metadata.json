@@ -1,0 +1,6 @@
+{
+  "name": "The Biryaani King - Riyadh",
+  "description": "Riyadh's Royal Taste of Pakistan - High impact digital dining experience, digital menu, online ordering, and catering for The Biryaani King.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
